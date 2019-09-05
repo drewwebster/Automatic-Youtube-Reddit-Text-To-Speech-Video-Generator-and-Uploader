@@ -134,10 +134,12 @@ I used praw to get the reddit scripts. By default I have set it to get 45 script
 Be default on start up of the YouTube Bot Server, it will request scripts, then it will request every one hour after this. If the script is already in the database it will update the database script entry with the updated comments/upvote values.
 
 <h2>Hardcoded API key input locations:</h2>
-**YouTube Bot Server:** <br>
+**YouTube Bot Server:**
+<br>
 Database host and password: database.py -> beginDataBaseConnection() <br>
 Reddit API client_id and secrets: reddit.py<br>
-**YouTube Bot Video Generator:**<br>
+**YouTube Bot Video Generator:**
+<br>
 Receive credentials for your google API account will be downloaded and saved automatically following a one time login (your browser window will be opened requesting a google account login): videouploader.py -> get_credentials()
 
 
