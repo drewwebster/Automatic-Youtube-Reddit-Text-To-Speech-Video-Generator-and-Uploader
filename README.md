@@ -72,9 +72,9 @@ Google API account
 
 <h2>How it works</h2>
 The project is comprised of three separate programs:
-1.	**YouTube Bot Server** -> initserver.py
-2.	**YouTube Bot Video Generator Client** -> youtubequeue.py
-3.	**YouTube Bot Client (Manual Review)** -> client.py
+1.	YouTube Bot Server -> initserver.py
+2.	YouTube Bot Video Generator Client -> youtubequeue.py
+3.	YouTube Bot Client (Manual Review) -> client.py
 
 <h2>YouTube Bot Server</h2>
 
