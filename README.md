@@ -114,17 +114,19 @@ The final content of the video includes the edited script, the thumbnail, tags, 
 
 **MySQL**
 
-Storage of the scripts and they’re relevant information is done with a MySQL database. This is the first time I used a MySQL database for a project, I’m not brilliant at SQL I learned what was necessary to get things to work. I used three tables “users”, “videogenerators” and “scripts”
-**“users” table**
+Storage of the scripts and they’re relevant information is done with a MySQL database. This is the first time I used a MySQL database for a project, I’m not brilliant at SQL I learned what was necessary to get things to work. I used three tables “users”, “videogenerators” and “scripts”<br>
+
+**“users” table**<br>
 Originally I had planned to create a extensive login system where users had editing statistics, see who’s online etc. Scrapped this and now its only use is for keeping track of which users are editing which videos to prevent the same video being edited and uploaded twice. Passwords are encrypted with MD5 on the client side
-**“scripts” table**
+
+**“scripts” table**<br>
 The most important table, holds all the script information. The status field is very important for keeping track of where a script should be.
 *-raw:* the script is available to edit
 *-editing:* the script is being edited and cannot be edited by any other users while in this state
 *-complete:* the script has been finished editing and will be sent to the video generator client 
 *-successupload:* the script has successfully been uploaded to YouTube
 
-**“videogenerators” table**
+**“videogenerators” table**<br>
 Like the users, I designed the client to have a username and password to login. Password is encrypted with MD5 on the client side
 
 These tables will be automatically created within a database called “youtubebot” if they do not already exist.
@@ -134,11 +136,11 @@ I used praw to get the reddit scripts. By default I have set it to get 45 script
 Be default on start up of the YouTube Bot Server, it will request scripts, then it will request every one hour after this. If the script is already in the database it will update the database script entry with the updated comments/upvote values.
 
 <h2>Hardcoded API key input locations:</h2>
-**YouTube Bot Server:**
+**YouTube Bot Server**
 <br>
 Database host and password: database.py -> beginDataBaseConnection() <br>
 Reddit API client_id and secrets: reddit.py<br>
-**YouTube Bot Video Generator:**
+**YouTube Bot Video Generator**
 <br>
 Receive credentials for your google API account will be downloaded and saved automatically following a one time login (your browser window will be opened requesting a google account login): videouploader.py -> get_credentials()
 
