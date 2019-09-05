@@ -32,7 +32,7 @@ https://www.youtube.com/watch?v=AW0yJIXXNxI&t=35s
 https://www.youtube.com/watch?v=izSxHx64pGQ
 https://www.youtube.com/watch?v=vzdTuAp2zTw
 
-
+<h2>Assets Download For Video Generator Client http://www.mediafire.com/file/hpu1j1k1avwp9dj/YouTube_Bot_Assets.zip/file (500MB)</h2>
 
 <h2>DISCLAIMER</h2>
 You will need to change several things for this code to work with your setup. The Video Generator Client and Server Program will be able to run on Linux. I rushed several parts of the project while balancing a full-time job so I could complete it before I started University in September. Additionally, I did not intend for it to be released to the public. That being said, I wouldn’t say its spaghetti code as I have several years of coding experience under my belt, however I am self-taught and thus I am sure that there are several aspects of the code that are not as efficient as possible and could have been designed much better.
