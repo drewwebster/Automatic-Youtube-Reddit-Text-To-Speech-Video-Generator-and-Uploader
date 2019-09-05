@@ -8,7 +8,9 @@ The idea was to minimize as much manual intervention as possible and automate al
 https://www.youtube.com/channel/UC0COfXvVMHVgZ-YH65Q8rVA?view_as=subscriber
 
 **Some of my Generated Videos:**
+
 https://www.youtube.com/watch?v=xxDKMHYXCsQ
+
 https://www.youtube.com/watch?v=AW0yJIXXNxI&t=35s
 
 
@@ -34,11 +36,14 @@ https://www.youtube.com/watch?v=vzdTuAp2zTw
 
 <h2>DISCLAIMER</h2>
 You will need to change several things for this code to work with your setup. The Video Generator Client and Server Program will be able to run on Linux. I rushed several parts of the project while balancing a full-time job so I could complete it before I started University in September. Additionally, I did not intend for it to be released to the public. That being said, I wouldn’t say its spaghetti code as I have several years of coding experience under my belt, however I am self-taught and thus I am sure that there are several aspects of the code that are not as efficient as possible and could have been designed much better.
+
 API logins and keys are hardcoded into the code and must be located and changed manually to get it to work for your setup. I have created a list of locations where they can be found. (see below)
+
 Furthermore I changed my mind on many design aspects partially through the project and therefore some files are named strangely and there is unused code here and there. I will not be updating the code anymore, however please feel free to.
 
 <h2>Why Am I releasing this?</h2>
-The motivation behind this project was to “bank” on YouTube advertisement money by spamming YouTube with a large quantity of these videos and then sitting back and letting the ad money build up. In reality, I had not done my research well enough and it turns out that recent policy changes meant that channels comprising of mainly Text-To-Speech videos were flagged as “automated content” which would mean that I would likely fail to be approved for monetization: in the case that I do pass the monetization test, my individual videos could still be demonetized. With active server costs £32 a month and no guarantee that these videos will ever make money I decided it would be best to let the project go so I can work on new things in the future. Hence the reason why I am uploading it to GitHub.
+The motivation behind this project was to “bank” on YouTube advertisement money by spamming YouTube with a large quantity of these videos and then sitting back and letting the ad money build up.
+In reality, I had not done my research well enough and it turns out that recent policy changes meant that channels comprising of mainly Text-To-Speech videos were flagged as “automated content” which would mean that I would likely fail to be approved for monetization: in the case that I do pass the monetization test, my individual videos could still be demonetized. With active server costs £32 a month and no guarantee that these videos will ever make money I decided it would be best to let the project go so I can work on new things in the future. Hence the reason why I am uploading it to GitHub.
 
 <h2>Dependencies</h2>
 **Client:** 
@@ -48,7 +53,9 @@ PyQt5, cv2, PIL, numpy
 pydub, oauth2client, soundfile, pymediainfo, cv2, moviepy, PIL, numpy, matplotlib
 
 YouTube-Upload https://github.com/tokland/youtube-upload
+
 Balabolka http://www.cross-plus-a.com/balabolka.htm
+
 Instructions on how to get the Daniel MLG Voice https://www.youtube.com/watch?v=yj3dhTnyotY
 
 **YouTube Bot Server:**
@@ -56,7 +63,9 @@ Mysql-connector, praw
 
 **Other**
 MySql Server
+
 Reddit account with developer key https://www.reddit.com/dev/api/ 
+
 Google API account
 
 
@@ -69,13 +78,16 @@ The project is comprised of three separate programs:
 <h2>YouTube Bot Server</h2>
 
 This program houses the (1) socket server for connecting to the client(s) program and also the (2) socket server for connecting to the video generator client(s). Additionally, this program will also grab new scripts from Reddit every one hour, and will also update the existing ones that have not yet been edited.
+
 (1)	This socket server will send raw scripts from the database to the manual review program (see below). It will then receive these reviewed scripts and update the database with the finalised scripts which will include a thumbnail, description and title. The server can handle multiple clients so multiple people can edit these scripts.
+
 (2)	The video generator server is currently only designed to handle one video generator client. Original plans were for this server to handle multiple video generator clients spread out between multiple computers. However, I found that one computer was sufficient enough for all my video generation needs, so mid-way through programming this I decided to hard code it to only handle one client. The purpose of this server is to send finalised scripts from the database to the video generator client.
 
 <h2>YouTube Bot Video Generator Client</h2>
 
 This program will receive finalised video scripts from the YouTube Bot Video Generator Server which include thumbnails, descriptions, tags and a title. These scripts will be generated into a mp4 file and then uploaded to YouTube at a scheduled release time (currently randomly at 5pm, 6 pm, 7pm GMT - the recommended times to upload to YouTube). Once the script is received it will be generated then the program will wait till it has enough API credits to upload by checking when the last 6 videos were uploaded. 
-API quota usage resets at 8am GMT. I have calculated that uploading each video will cost 1658 credits. You can use a maximum of 10 000 credits a day. This means in theory you will be able to upload 6 videos a day. However, in practise I have been able to upload 5 videos, sometimes the sixth one will upload however there will not be enough quotas available to upload the thumbnail, which in that case will require manual intervention to upload the thumbnail manually. The videos are uploaded with YouTube-Upload which I have only managed to get to work with python 2.7. It is called with subprocess.check_call with python version specified and arguments as required (link below).
+
+**API quota usage resets at 8am GMT**. I have calculated that uploading each video will cost **1658 credits**. You can use a maximum of 10 000 credits a day. This means in theory you will be able to **upload 6 videos a day**. However, in practise I have been able to upload 5 videos, sometimes the sixth one will upload however there will not be enough quotas available to upload the thumbnail, which in that case will require manual intervention to upload the thumbnail manually. The videos are uploaded with YouTube-Upload which I have only managed to get to work with python 2.7. It is called with subprocess.check_call with python version specified and arguments as required (link below).
 
 Once a video is successfully uploaded its status is set to complete along with an upload time so that the program can check how many videos were uploaded within the day to avoid exceeding quota usage. 
 
