@@ -7,14 +7,15 @@ The idea was to minimize as much manual intervention as possible and automate al
 <h1>My Automatic Text To Speech Channel (Royal Reddit)</h1>
 https://www.youtube.com/channel/UC0COfXvVMHVgZ-YH65Q8rVA?view_as=subscriber
 
-**Some of my Generated Videos:
+**Some of my Generated Videos:**
 
 https://www.youtube.com/watch?v=xxDKMHYXCsQ
 
 https://www.youtube.com/watch?v=AW0yJIXXNxI&t=35s
 
 
-The process of completing a video involves:
+**The process of completing a video involves:**
+
 1.	Loading up the client program
 2.	Selecting a raw script to edit
 3.	Pressing keep/skip for each comment within the video
@@ -26,7 +27,8 @@ The process of completing a video involves:
 9.	Press “Send To Video Generator” and you will be notified when the script has been finished uploading to the server
 10.	Done
 
-Example Reddit Text-To-Speech Channels:
+*Example Reddit Text-To-Speech Channels:*
+
 https://www.youtube.com/watch?v=izSxHx64pGQ
 https://www.youtube.com/watch?v=vzdTuAp2zTw
 
