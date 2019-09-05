@@ -6,8 +6,11 @@ The idea was to minimize as much manual intervention as possible and automate al
 
 <h1>My Automatic Text To Speech Channel (Royal Reddit)</h1>
 https://www.youtube.com/channel/UC0COfXvVMHVgZ-YH65Q8rVA?view_as=subscriber
-Some of my Generated Videos:
+
+**Some of my Generated Videos:
+
 https://www.youtube.com/watch?v=xxDKMHYXCsQ
+
 https://www.youtube.com/watch?v=AW0yJIXXNxI&t=35s
 
 
