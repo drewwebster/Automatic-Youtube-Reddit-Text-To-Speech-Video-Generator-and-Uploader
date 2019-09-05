@@ -1,9 +1,10 @@
 # Automatic-Youtube-Reddit-Text-To-Speech-Video-Generator-and-Uploader
 
 Following the recent YouTube trend in “Reddit to Text-To-Speech” YouTube Videos I embarked on a project to create a program that can automate the process of receiving, generating and uploading these videos to YouTube with as little intervention as possible. It took 4 months to finish the project and is comprised of 3 separate programs that work simultaneously in order to complete this task.
+
 The idea was to minimize as much manual intervention as possible and automate all the trivial tasks. However the process cannot be 100% automated. For example comments with links in them cannot be kept as quality of the video will be comprised due to the TTS. Additionally while a comment might have a large number of votes it could potentially be offensive and not safe for a YouTube video and thus must be removed. The thumbnail, while partially generated, must be edited in order to create any kind of appeal to viewers to click on your video. The same goes for the title of the video which must be clickbait-y in order to receive any attention. I have attempted to streamline the manual process with the client program and it takes me approximately 30 minutes to create 6 videos (the max that can be uploaded within 24 hours with the YouTube Data API).
 
-My Automatic Text To Speech Channel (Royal Reddit)
+<h1>My Automatic Text To Speech Channel (Royal Reddit)</h1>
 https://www.youtube.com/channel/UC0COfXvVMHVgZ-YH65Q8rVA?view_as=subscriber
 Some of my Generated Videos:
 https://www.youtube.com/watch?v=xxDKMHYXCsQ
