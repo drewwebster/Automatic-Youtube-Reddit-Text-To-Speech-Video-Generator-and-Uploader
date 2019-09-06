@@ -46,7 +46,9 @@ Furthermore I changed my mind on many design aspects partially through the proje
 
 <h2>Why Am I releasing this?</h2>
 The motivation behind this project was to “bank” on YouTube advertisement money by spamming YouTube with a large quantity of these videos and then sitting back and letting the ad money build up.
-In reality, I had not done my research well enough and it turns out that recent policy changes meant that channels comprising of mainly Text-To-Speech videos were flagged as “automated content” which would mean that I would likely fail to be approved for monetization: in the case that I do pass the monetization test, my individual videos could still be demonetized. With active server costs £32 a month and no guarantee that these videos will ever make money I decided it would be best to let the project go so I can work on new things in the future. Hence the reason why I am uploading it to GitHub.
+In reality, I had not done my research well enough and it turns out that recent policy changes meant that channels comprising of mainly Text-To-Speech videos were flagged as “automated content” which would mean that I would likely fail to be approved for monetization: in the case that I do pass the monetization test, my individual videos could still be demonetized.
+However saying this, this policy change is unclear and I am unsure whether it it is definite that you will not be able to get monetization.
+With active server costs £32 a month and no guarantee that these videos will ever make money I decided it would be best to let the project go so I can work on new things in the future. Hence the reason why I am uploading it to GitHub.
 
 <h2>Dependencies</h2>
 
